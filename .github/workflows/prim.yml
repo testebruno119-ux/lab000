@@ -6,16 +6,11 @@ on:
       - main
 
 jobs:
-  build:
+  teste_ambiente:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run build
+      - name: teste_ambiente
         run: |
-          echo "Executado com sucesso"
-
-      - uses: actions/checkout@v4
-      - name: Crie um arquivo texto
-        run: |
-          ls -lah
+          env
 
