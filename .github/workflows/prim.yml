@@ -13,3 +13,10 @@ jobs:
       - name: Run build
         run: |
           echo "Executado com sucesso"
+
+      - uses: actions/checkout@v4
+      - name: Crie um arquivo texto
+        run: |
+          echo "OK" > .teste.txt
+          ls -lah
+
