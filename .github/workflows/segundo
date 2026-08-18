@@ -1,0 +1,20 @@
+name: Meu primeiro pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run build
+        run: |
+          echo "Executado com sucesso"
+
+      - uses: actions/checkout@v4
+      - name: Crie um arquivo texto
+        run: |
+          ls -lah
