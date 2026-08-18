@@ -1,4 +1,4 @@
-name: Meu primeiro pipeline
+name: Meu segundo pipeline
 
 on:
   push:
@@ -15,6 +15,6 @@ jobs:
           echo "Executado com sucesso"
 
       - uses: actions/checkout@v4
-      - name: Crie um arquivo texto
+      - name: lista arquivos
         run: |
           ls -lah
